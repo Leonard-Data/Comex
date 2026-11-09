@@ -4,7 +4,8 @@
 
 Interactive views:
 
-- **Data model** — <https://leonard-data.github.io/Comex/#comex-territory-model.html> (source [docs/diagrams/comex-territory-model.html](diagrams/comex-territory-model.html))
+- **Data model — entity relationships** — <https://leonard-data.github.io/Comex/#comex-territory-data-model.html> (source [docs/diagrams/comex-territory-data-model.html](diagrams/comex-territory-data-model.html)) — every table, column, type and key role, grouped into four domains
+- **Data model — object map** — <https://leonard-data.github.io/Comex/#comex-territory-model.html> (source [docs/diagrams/comex-territory-model.html](diagrams/comex-territory-model.html)) — the same objects as a one-screen overview
 - **Position in the ecosystem** — <https://leonard-data.github.io/Comex/#comex-territory-ecosystem.html> (source [docs/diagrams/comex-territory-ecosystem.html](diagrams/comex-territory-ecosystem.html))
 
 ## 1. What it is, in business terms
@@ -35,6 +36,8 @@ Salesforce's Enterprise Territory Management (ETM, "TM 2.0"; the original Territ
 | **ObjectTerritory2AssignmentRule** | The criteria that assign records automatically | `BooleanFilter` (e.g. "(1 AND 2) OR 3"), `IsActive` |
 | **ObjectTerritory2Association** | A record ↔ territory link | `ObjectId`, `SobjectType` (Account, Lead), `AssociationCause` = `Territory2AssignmentRule` or `Territory2Manual` |
 | **UserTerritory2Association** | A rep ↔ territory link | `UserId`, `RoleInTerritory2` = Owner / Administrator / Sales Rep, `IsActive` |
+
+The [entity-relationship diagram](diagrams/comex-territory-data-model.html) carries every column with its type and key roles, in four domains: **model** (`Territory2Model`, `Territory2Type`), **territory** (`Territory2`), **rules** (`ObjectTerritory2AssignmentRule` and its rule items) and **assignment** (the two association tables, plus `Account`/`Lead` and `User`).
 
 Five consequences that matter more than the field list:
 
