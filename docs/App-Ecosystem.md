@@ -32,7 +32,7 @@ flowchart LR
 | App | State | Purpose |
 |---|---|---|
 | **Nexus** | Expecting Jul-27 | Sales Rep master data management. Works in parallel with ComEx SQL Server |
-| **ConnectPlus (CRM)** | Expecting Jan-27 | Managing all sales activities. Central hub |
+| **ConnectPlus (CRM)** | Expecting Jan-27 | Managing all sales activities. Central hub. Function breakdown: [CRM Modules](CRM-Modules.md) |
 | **ComEx SQL Server** | Live | Master data management. Works in parallel with Nexus |
 
 ## Consumers

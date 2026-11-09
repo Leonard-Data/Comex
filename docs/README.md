@@ -16,6 +16,7 @@
 ## Pages
 
 - [App Ecosystem](App-Ecosystem) — every app, its owner, state and data flow
+- [CRM Modules](CRM-Modules) — the seven standard CRM functions, who owns each and what is unowned
 - [Glossary](Glossary)
 - [Ways of Working](Ways-of-Working) — how we use issues, the board and this wiki
 
