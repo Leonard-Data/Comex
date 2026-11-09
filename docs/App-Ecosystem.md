@@ -45,6 +45,6 @@ flowchart LR
 | **Easy Order** | Live | Ordering platform |
 | **Daily report** | Live | Sends mapped data to sales |
 
-Interactive overview diagram: [.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html](../.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html) — regenerate with `archify finalize architecture <candidate.json>` in that folder; the tables above stay the source of truth.
+Interactive overview diagram: **<https://leonard-data.github.io/Comex/>** (source [docs/diagrams/comex-app-ecosystem.html](diagrams/comex-app-ecosystem.html)). To publish a new or updated diagram: run `archify finalize architecture` under `.archify/` (gitignored working area), then copy the resulting `.html` into `docs/diagrams/` and push — the Pages index lists it automatically. The tables above stay the source of truth.
 
 > Source: *ComEx App Ecosystem | Future*, page 2.
