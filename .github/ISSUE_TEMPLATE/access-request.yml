@@ -1,0 +1,18 @@
+name: Access issue / request
+description: Request or report a problem with access to a ComEx app or data source
+labels: [access]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: App / system
+      options: [SFA, DocPromo, MedCompli, Nexus, ConnectPlus (CRM), On24, ComEx SQL Server, Dagster, Eagle Eye, Client reports, Easy Order, Daily report, Other]
+    validations: { required: true }
+  - type: input
+    id: who
+    attributes: { label: Who needs access, description: "Name, role, territory/team" }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What is needed or broken, description: "Expected vs actual. Error message if any." }
+    validations: { required: true }

@@ -1,0 +1,23 @@
+name: Solution trace
+description: Trace an issue from symptom to root cause and resolution
+labels: [solution-trace]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: App / system
+      options: [SFA, DocPromo, MedCompli, Nexus, ConnectPlus (CRM), On24, ComEx SQL Server, Dagster, Eagle Eye, Client reports, Easy Order, Daily report, Other]
+    validations: { required: true }
+  - type: textarea
+    id: symptom
+    attributes: { label: Symptom, description: "What was observed, by whom, when." }
+    validations: { required: true }
+  - type: textarea
+    id: trace
+    attributes: { label: Trace, description: "Data path followed. Checks run and their result." }
+  - type: textarea
+    id: cause
+    attributes: { label: Root cause }
+  - type: textarea
+    id: fix
+    attributes: { label: Resolution / follow-up }
