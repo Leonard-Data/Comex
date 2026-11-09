@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ComEx Diagrams</title>
+<style>
+:root{color-scheme:dark light}
+body{margin:0;font:15px/1.5 system-ui,sans-serif;background:#0b0f14;color:#e6edf3;display:flex;min-height:100vh}
+nav{flex:0 0 260px;padding:20px;border-right:1px solid #1f2a36;overflow:auto}
+h1{font-size:16px;margin:0 0 4px}
+p.sub{margin:0 0 16px;color:#8b98a5;font-size:13px}
+a{color:#58a6ff;text-decoration:none;display:block;padding:7px 9px;border-radius:6px}
+a:hover{background:#161b22}a.on{background:#1f6feb33;color:#e6edf3}
+iframe{flex:1;border:0;background:#fff}
+.err{color:#8b98a5;font-size:13px}
+footer{margin-top:20px;font-size:12px;color:#8b98a5}
+footer a{display:inline;padding:0}
+</style></head><body>
+<nav>
+  <h1>ComEx Diagrams</h1>
+  <p class="sub">Archify diagrams in <code>docs/diagrams/</code>. The list reads the repo at load, so a newly pushed diagram shows up on refresh.</p>
+  <div id="list" class="err">Loading…</div>
+  <footer>
+    <a href="App-Ecosystem.html">App Ecosystem (docs)</a> ·
+    <a href="https://github.com/users/Leonard-Data/projects/6">Board</a> ·
+    <a href="https://github.com/Leonard-Data/Comex">Repo</a>
+  </footer>
+</nav>
+<iframe id="view" title="diagram"></iframe>
+<script>
+const API="https://api.github.com/repos/Leonard-Data/Comex/contents/docs/diagrams?ref=main";
+const list=document.getElementById("list"),view=document.getElementById("view");
+const title=n=>n.replace(/\.html$/,"").replace(/[-_]/g," ").replace(/\b\w/g,c=>c.toUpperCase());
+function show(name,el){view.src="diagrams/"+name;location.hash=name;
+  for(const a of list.querySelectorAll("a"))a.classList.toggle("on",a===el);}
+fetch(API).then(r=>r.ok?r.json():Promise.reject(r.status)).then(files=>{
+  const html=files.filter(f=>f.type==="file"&&f.name.endsWith(".html")).sort((a,b)=>a.name.localeCompare(b.name));
+  if(!html.length)return list.textContent="No diagrams yet.";
+  list.textContent="";
+  const want=decodeURIComponent(location.hash.slice(1));
+  for(const f of html){const a=document.createElement("a");a.href="diagrams/"+f.name;a.textContent=title(f.name);
+    a.onclick=e=>{e.preventDefault();show(f.name,a)};list.append(a);}
+  const first=html.find(f=>f.name===want)||html[0];
+  show(first.name,[...list.children][html.indexOf(first)]);
+}).catch(()=>{list.innerHTML='<p class="err">Could not list diagrams (GitHub API rate limit). Open <a href="diagrams/comex-app-ecosystem.html">comex-app-ecosystem.html</a> directly.</p>';});
+</script>
+</body></html>
