@@ -26,7 +26,7 @@ Modules 5 and 6 have no Odoo equivalent — they exist because ComEx operates in
 | 2 | **Qualification** | Lead scoring; assignment to rep; routing to sales team | ConnectPlus | Expecting Jan-27 | Leading |
 | 3 | **Pipeline** | Stages; forecast; won/lost reasons | ConnectPlus | Expecting Jan-27 | Managing |
 | 4 | **Activity** | Visits, calls, webinar follow-up; engagement log | ConnectPlus | Expecting Jan-27 | Training |
-| 5 | **Customer & Territory** | HCO/HCP master; territory; sales team; rep master | Nexus + ComEx SQL Server, mapped by Dagster | SQL Server live; Nexus expecting Jul-27 | Control |
+| 5 | **[Customer & Territory](Territory-Management.md)** | HCO/HCP master; territory; sales team; rep master | Nexus + ComEx SQL Server, mapped by Dagster | SQL Server live; Nexus expecting Jul-27 | Control |
 | 6 | **Quote & Order** | Quotation; order capture | Easy Order | Live | Orders |
 | 7 | **Performance** | KPI monitoring; win/loss; forecast; client-level and daily reporting | Eagle Eye, Client reports, Daily report | Live | Analysis |
 

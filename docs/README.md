@@ -17,6 +17,7 @@
 
 - [App Ecosystem](App-Ecosystem) — every app, its owner, state and data flow
 - [CRM Modules](CRM-Modules) — the seven standard CRM functions, who owns each and what is unowned
+- [Territory Management](Territory-Management) — what a territory is, its data model, and where mapping sits in the ecosystem
 - [Glossary](Glossary)
 - [Ways of Working](Ways-of-Working) — how we use issues, the board and this wiki
 
