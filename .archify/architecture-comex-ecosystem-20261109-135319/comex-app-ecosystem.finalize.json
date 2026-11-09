@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "skipped",
+  "type": "architecture",
+  "quality": "showcase",
+  "startedAt": "2026-11-09T07:00:07.858Z",
+  "specification": {
+    "path": "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/candidate.json",
+    "sha256": "7dd5af6e2014cb4c292104d044c8d76e2323f29d34d776330e7dbc576e901d49",
+    "bytes": 7911
+  },
+  "artifact": {
+    "path": "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html",
+    "sha256": "c0655e02f235683d1efaeb5f7475963d25e0c05783765373db9df984a13007b9",
+    "bytes": 773259
+  },
+  "stages": {
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/root/.local/share/pi-node/node-v24.22.2-linux-x64/bin/node",
+        "/root/.dsh/profiles/web/node_modules/@tt-a1i/archify-dsh/skills/archify/bin/archify.mjs",
+        "deliver",
+        "architecture",
+        "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/candidate.json",
+        "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/root/Comex",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "7dd5af6e2014cb4c292104d044c8d76e2323f29d34d776330e7dbc576e901d49",
+          "bytes": 7911
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 838,
+      "command": [
+        "/root/.local/share/pi-node/node-v24.22.2-linux-x64/bin/node",
+        "/root/.dsh/profiles/web/node_modules/@tt-a1i/archify-dsh/skills/archify/bin/archify.mjs",
+        "deliver",
+        "architecture",
+        "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/candidate.json",
+        "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/root/Comex",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "0c7d0c17-f155-433c-a1bc-16924f633968",
+        "ok": true,
+        "command": "deliver",
+        "type": "architecture",
+        "input": "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/candidate.json",
+        "output": "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html",
+        "specification": {
+          "sha256": "7dd5af6e2014cb4c292104d044c8d76e2323f29d34d776330e7dbc576e901d49",
+          "bytes": 7911
+        },
+        "artifact": {
+          "sha256": "c0655e02f235683d1efaeb5f7475963d25e0c05783765373db9df984a13007b9",
+          "bytes": 773259
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "evidence": {
+          "verified": true,
+          "repository": "https://github.com/Leonard-Data/Comex",
+          "revision": "22ed6de26aa47c44cfab9064c5f45af54856e600",
+          "references": 12
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 464,
+      "command": [
+        "/root/.local/share/pi-node/node-v24.22.2-linux-x64/bin/node",
+        "/root/.dsh/profiles/web/node_modules/@tt-a1i/archify-dsh/skills/archify/bin/archify.mjs",
+        "check",
+        "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html",
+        "artifact": {
+          "sha256": "c0655e02f235683d1efaeb5f7475963d25e0c05783765373db9df984a13007b9",
+          "bytes": 773259
+        },
+        "checks": [
+          {
+            "name": "single_svg",
+            "ok": true,
+            "details": [
+              "found 1 <svg> block(s)"
+            ]
+          },
+          {
+            "name": "finite_svg",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "orthogonal_arrows",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "label_route_clearance",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "relationship_crossings",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "relationship_corridors",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "container_border_runs",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "route_rhythm",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "legend_clearance",
+            "ok": true,
+            "details": []
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "metrics": {
+            "properCrossings": 0,
+            "resolvedCrossovers": 0,
+            "ambiguousCorridors": 0,
+            "arrowheadCollisions": 0,
+            "containerBorderRuns": 0,
+            "labelRouteClearanceIssues": 0,
+            "labelCanvasOverflowIssues": 0,
+            "minLabelRouteClearance": 10.4,
+            "desktopReadabilityIssues": 0,
+            "viewportHeightIssues": 0,
+            "minProjectedNodeTextPx": 7.5,
+            "maxBends": 4,
+            "routesOverSuggestedBends": 2,
+            "maxStretch": 1.395,
+            "routesOverSuggestedStretch": 1,
+            "minSegmentPx": 16,
+            "minInteriorSegmentPx": 16,
+            "shortSegmentCount": 0,
+            "shortEndpointSegmentCount": 0,
+            "shortInteriorSegmentCount": 0,
+            "microSegmentCount": 0
+          },
+          "suggestedLimits": {
+            "bendsPerRelationship": 2,
+            "stretch": 1.35,
+            "segmentPx": 16,
+            "microSegmentPx": 8
+          },
+          "routeReview": {
+            "crossings": [],
+            "detours": [
+              {
+                "relationship": {
+                  "id": "nexus-cp",
+                  "from": "nexus",
+                  "to": "cp",
+                  "label": "rep master data",
+                  "collectionIndex": 4,
+                  "artifactIndex": 5
+                },
+                "bends": 4,
+                "stretch": 1.182
+              },
+              {
+                "relationship": {
+                  "id": "dagster-dailyreport",
+                  "from": "dagster",
+                  "to": "dailyreport",
+                  "label": "mapped data",
+                  "collectionIndex": 11,
+                  "artifactIndex": 12
+                },
+                "bends": 4,
+                "stretch": 1.395
+              }
+            ]
+          },
+          "leadingSpace": {
+            "measured": true,
+            "emptyTopPx": 40,
+            "emptyTopRatio": 0.072,
+            "occupiedTop": 40,
+            "viewBoxTop": 0,
+            "canvasHeight": 552,
+            "typicalNodeHeight": 64,
+            "reviewSuggested": false
+          },
+          "desktopReadability": {
+            "budgetBasis": "recognized-declared-wide",
+            "readerContract": "declared-wide-v1",
+            "availableDiagramWidth": 1031.25,
+            "actualBudgetPx": 1031.25,
+            "actualReaderWidth": 1061.25,
+            "desiredReaderWidth": 1061.25,
+            "viewportCap": 1376,
+            "limit": "source-size",
+            "requestedTargetPx": 7.5,
+            "requestedTargetMet": true,
+            "hardFloorPx": 6,
+            "hardFloorMet": true,
+            "minimumOwner": {
+              "kind": "edge",
+              "id": "sfa-nexus",
+              "from": "sfa",
+              "to": "nexus"
+            },
+            "minimumSourceTextPx": 8,
+            "minimumProjectedTextPx": 7.5,
+            "semanticTextCount": 36
+          },
+          "issues": []
+        },
+        "provenance": "current",
+        "deliveryReceiptId": "0c7d0c17-f155-433c-a1bc-16924f633968"
+      }
+    },
+    "browser-check": {
+      "status": "skipped",
+      "exitCode": 2,
+      "durationMs": 33,
+      "command": [
+        "/root/.local/share/pi-node/node-v24.22.2-linux-x64/bin/node",
+        "/root/.dsh/profiles/web/node_modules/@tt-a1i/archify-dsh/skills/archify/bin/archify.mjs",
+        "browser-check",
+        "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html",
+        "--json",
+        "--require-provenance"
+      ],
+      "execution": "in-process",
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": false,
+        "command": "browser-check",
+        "evidenceKind": "automated-browser",
+        "status": "skipped",
+        "visualReview": "not-requested",
+        "provenance": "current",
+        "deliveryReceiptId": "0c7d0c17-f155-433c-a1bc-16924f633968",
+        "artifact": {
+          "path": "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html",
+          "sha256": "c0655e02f235683d1efaeb5f7475963d25e0c05783765373db9df984a13007b9",
+          "bytes": 773259
+        },
+        "state": {
+          "detail": "read",
+          "motion": "still"
+        },
+        "chrome": {
+          "status": "unavailable",
+          "executable": null
+        },
+        "diagnostics": [
+          {
+            "code": "viewer/chrome-unavailable",
+            "severity": "warning",
+            "message": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path.",
+            "subject": {
+              "artifact": "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html"
+            },
+            "evidence": {
+              "executable": null
+            },
+            "supportedFixes": [
+              "set ARCHIFY_CHROME to a Chrome or Chromium executable and rerun browser-check"
+            ]
+          }
+        ],
+        "containment": {
+          "status": "skipped",
+          "policy": "fit-or-reader-declared-readable-vertical-scroll",
+          "viewports": []
+        },
+        "themeStates": {
+          "status": "skipped",
+          "viewports": []
+        },
+        "readability": {
+          "status": "skipped",
+          "minimumProjectedNodeTextPx": 6,
+          "viewports": []
+        },
+        "viewerChrome": {
+          "status": "skipped",
+          "viewports": []
+        },
+        "captures": {
+          "status": "not-requested",
+          "screenshots": [],
+          "contactSheet": null
+        },
+        "sidecars": {
+          "receipt": "comex-app-ecosystem.browser-check.json",
+          "files": []
+        },
+        "error": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path."
+      }
+    }
+  },
+  "diagnostics": [
+    {
+      "code": "viewer/chrome-unavailable",
+      "severity": "warning",
+      "message": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path.",
+      "subject": {
+        "artifact": "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html"
+      },
+      "evidence": {
+        "executable": null
+      },
+      "supportedFixes": [
+        "set ARCHIFY_CHROME to a Chrome or Chromium executable and rerun browser-check"
+      ]
+    }
+  ],
+  "evidence": {
+    "receipt": "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.finalize.json",
+    "summaryReceipt": "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.finalize-summary.json",
+    "browserCheckReceipt": "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.browser-check.json"
+  },
+  "visualReview": "not-requested",
+  "failedStage": "browser-check",
+  "finishedAt": "2026-11-09T07:00:09.413Z",
+  "durationMs": 1557,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "cache-unavailable"
+  }
+}

@@ -45,4 +45,6 @@ flowchart LR
 | **Easy Order** | Live | Ordering platform |
 | **Daily report** | Live | Sends mapped data to sales |
 
+Interactive overview diagram: [.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html](../.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html) — regenerate with `archify finalize architecture <candidate.json>` in that folder; the tables above stay the source of truth.
+
 > Source: *ComEx App Ecosystem | Future*, page 2.

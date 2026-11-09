@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "0c7d0c17-f155-433c-a1bc-16924f633968",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/candidate.json",
+  "output": "/root/Comex/.archify/architecture-comex-ecosystem-20261109-135319/comex-app-ecosystem.html",
+  "specification": {
+    "sha256": "7dd5af6e2014cb4c292104d044c8d76e2323f29d34d776330e7dbc576e901d49",
+    "bytes": 7911
+  },
+  "artifact": {
+    "sha256": "c0655e02f235683d1efaeb5f7475963d25e0c05783765373db9df984a13007b9",
+    "bytes": 773259
+  }
+}
