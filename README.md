@@ -9,7 +9,7 @@ ComEx is the Sales Forces team in charge of all sales operations: **Orders, Trai
 | What | Where |
 |---|---|
 | Business context, app ecosystem, glossary | [Wiki](../../wiki) |
-| Roadmap + project placeholder table | [ComEx Ecosystem board](https://github.com/users/Leonard-Data/projects/PROJECT_NUMBER) |
+| Roadmap + project placeholder table | [ComEx Ecosystem board](https://github.com/users/Leonard-Data/projects/6) |
 | Solution tracing (incidents, root cause) | [Issues: `solution-trace`](../../issues?q=is%3Aissue+label%3Asolution-trace) |
 | Access issues / requests | [Issues: `access`](../../issues?q=is%3Aissue+label%3Aaccess) |
 | Code | this repository |
