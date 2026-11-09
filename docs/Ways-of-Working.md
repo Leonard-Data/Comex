@@ -17,5 +17,5 @@
 
 ## Board fields
 
-**App**, **Phase** (Idea / Scoping / Build / UAT / Live), **Owner**, **Target date**, **Status**.
+See [AGENTS.md](../AGENTS.md) for the full field list, the Category taxonomy and the three board views.
 The **Roadmap** view is grouped by App and spans Target date. The **Projects** view is the flat table.
